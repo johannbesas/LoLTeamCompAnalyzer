@@ -17,17 +17,17 @@ function listChars(container, player) {
             break;
         case "Johann":
             var img = document.createElement("img");
-            img.setAttribute("src", "images/positions/Jungle_icon.png");
+            img.setAttribute("src", "images/positions/Middle_icon.png");
             iconBlock.append(img);
             break;
         case "Leigh":
             var img = document.createElement("img");
-            img.setAttribute("src", "images/positions/Jungle_icon.png");
+            img.setAttribute("src", "images/positions/Bottom_icon.png");
             iconBlock.append(img);
             break;
         case "Adam":
             var img = document.createElement("img");
-            img.setAttribute("src", "images/positions/Jungle_icon.png");
+            img.setAttribute("src", "images/positions/Support_icon.png");
             iconBlock.append(img);
             break;
     }
@@ -117,7 +117,7 @@ Players = [
     {
         "name": "Jonathan",
         "S": ['Urgot'],
-        "A": ['Gangplank'],
+        "A": ['Gangplank', 'Sion'],
         "B": ['Pantheon', 'Riven'],
         "C": ['Ornn', 'Mordekaiser']
     },
