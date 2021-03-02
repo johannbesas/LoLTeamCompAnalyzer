@@ -126,7 +126,7 @@ Players = [
         "S": ['Jarvan_IV', 'Amumu',],
         "A": ['Skarner', 'Udyr', 'Malphite'],
         "B": ['Olaf', 'Gragas', 'Graves'],
-        "C": ['Rammus', 'KhaZix', 'Kayn']
+        "C": ['Rammus', 'ChoGath', 'KhaZix', 'Kayn']
     },
     {
         "name": "Johann",
