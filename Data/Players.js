@@ -137,7 +137,7 @@ Players = [
     },
     {
         "name": "Leigh",
-        "S": ['Kaisa', 'Jhin'],
+        "S": ['KaiSa', 'Jhin'],
         "A": ['Samira', 'Caitlyn', 'Ezreal'],
         "B": ['Tristana', 'Xayah', 'Vayne', 'Jinx',],
         "C": ['Senna', 'Ashe']
@@ -146,7 +146,7 @@ Players = [
         "name": "Adam",
         "S": ['Seraphine'],
         "A": ['Yuumi', 'Rakan', 'Sona'],
-        "B": ['Lulu', 'Karma'],
+        "B": ['Lulu', 'Karma', 'Soraka'],
         "C": ['Rell']
     }
 ]
