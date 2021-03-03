@@ -1,9 +1,9 @@
 function listChars(container, player) {
- 
+
     var iconBlock = document.createElement("div");
     iconBlock.setAttribute('class', 'tierHeader');
-    container.append(iconBlock); 
-    
+    container.append(iconBlock);
+
     switch (player.name) {
         case "Jonathan":
             var img = document.createElement("img");
@@ -32,79 +32,63 @@ function listChars(container, player) {
             break;
     }
 
-
     var nameBlock = document.createElement("h2");
     nameBlock.setAttribute('class', 'nameBlock');
     iconBlock.appendChild(nameBlock);
     nameBlock.innerHTML = player.name;
 
-    var sTierRow = document.createElement("div");
-    sTierBlock = document.createElement("div");
-    sTierBlock.setAttribute('id', 'sTier');
-    sTierBlock.innerHTML = 'S';
-    sTierBlock.setAttribute('class', 'label-holder');
-    sTierBlock.setAttribute('style', 'background-color: #FF7F7F;');
-    sTierRow.setAttribute('class', 'tier-row');
-    sTierRow.appendChild(sTierBlock);
-    container.appendChild(sTierRow);
+    createBase(container, player, 'S');
+    createBase(container, player, 'A');
+    createBase(container, player, 'B');
+    createBase(container, player, 'C');
+}
+function createRow(tier) {
+    var tierRow = document.createElement("div");
+    var tierBlock = document.createElement("div");
+    tierBlock.setAttribute('class', 'label-holder');
+    switch (tier) {
+        case "S":
+            tierBlock.setAttribute('style', 'background-color: #FF7F7F');
+            tierBlock.innerHTML = "S";
+            break;
+        case "A":
+            tierBlock.setAttribute('style', 'background-color: #FFBF7F');
+            tierBlock.innerHTML = "A";
+            break;
+        case "B":
+            tierBlock.setAttribute('style', 'background-color: #FFDF7F');
+            tierBlock.innerHTML = "B";
+            break;
+        case "C":
+            tierBlock.setAttribute('style', 'background-color: #FFFF7F');
+            tierBlock.innerHTML = "C";
+            break;
+        default:
+            break;
+    }
+    tierRow.setAttribute('class', 'tier-row');
+    tierRow.appendChild(tierBlock);
+    return tierRow;
+}
 
-    player['S'].forEach(character => {
-        var charIcon = document.createElement("img");
-        charIcon.setAttribute('class', 'character');
-        charIcon.setAttribute("src", "images/champPortraits/" + character + "Square.png");
-        sTierRow.appendChild(charIcon);
-    });
+function createCharIcon(character) {
+    var charIcon = document.createElement("img");
+    charIcon.setAttribute('class', 'character');
+    charIcon.setAttribute("src", "images/champPortraits/" + character + "Square.png");
+    return charIcon;
+}
 
-    var aTierRow = document.createElement("div");
-    aTierBlock = document.createElement("div");
-    aTierBlock.innerHTML = 'A';
-    aTierBlock.setAttribute('class', 'label-holder');
-    aTierBlock.setAttribute('style', 'background-color: #FFBF7F;');
-    aTierRow.setAttribute('class', 'tier-row');
-    aTierRow.appendChild(aTierBlock);
-    container.appendChild(aTierRow);
+function addChars(player, tier, tierRow) {
+    for (i = 0; i < player[tier].length; i++) {
+        var charIcon = createCharIcon(player[tier][i]);
+        tierRow.appendChild(charIcon);
+    }
+}
 
-    player['A'].forEach(character => {
-        var charIcon = document.createElement("img");
-        charIcon.setAttribute('class', 'character');
-        charIcon.setAttribute("src", "images/champPortraits/" + character + "Square.png");
-        aTierRow.appendChild(charIcon);
-    });
-
-    var bTierRow = document.createElement("div");
-    bTierBlock = document.createElement("div");
-    bTierBlock.innerHTML = 'B';
-    bTierBlock.setAttribute('class', 'label-holder');
-    bTierBlock.setAttribute('style', 'background-color: #FFDF7F;');
-    bTierRow.setAttribute('class', 'tier-row');
-    bTierRow.appendChild(bTierBlock);
-    container.appendChild(bTierRow);
-
-    player['B'].forEach(character => {
-        var charIcon = document.createElement("img");
-        charIcon.setAttribute('class', 'character');
-        charIcon.setAttribute("src", "images/champPortraits/" + character + "Square.png");
-        bTierRow.appendChild(charIcon);
-    });
-
-    var cTierRow = document.createElement("div");
-    cTierBlock = document.createElement("div");
-    cTierBlock.innerHTML = 'C';
-    cTierBlock.setAttribute('class', 'label-holder');
-    cTierBlock.setAttribute('style', 'background-color: #FFFF7F;');
-    cTierRow.setAttribute('class', 'tier-row');
-    cTierRow.appendChild(cTierBlock);
-    container.appendChild(cTierRow);
-
-    player['C'].forEach(character => {
-        var charIcon = document.createElement("img");
-        charIcon.setAttribute('class', 'character');
-        charIcon.setAttribute("src", "images/champPortraits/" + character + "Square.png");
-        cTierRow.appendChild(charIcon);
-    });
-
-
-    //dTierBlock.setAttribute('style', 'background-color: #FFFF7F;');
+function createBase(container, player, tier) {
+    var tierRow = createRow(tier);
+    container.appendChild(tierRow);
+    characterRow = addChars(player, tier, tierRow)
 }
 
 function initPlayers() {
