@@ -1,0 +1,114 @@
+{
+    "players": [
+        {
+            "name": "Jonathan",
+            "role": "top",
+            "S": [
+                "Urgot"
+            ],
+            "A": [
+                "Gangplank",
+                "Sion"
+            ],
+            "B": [
+                "Pantheon",
+                "Riven"
+            ],
+            "C": [
+                "Ornn",
+                "Mordekaiser"
+            ]
+        },
+        {
+            "name": "Jamie",
+            "role": "jungle",
+            "S": [
+                "Jarvan_IV",
+                "Amumu"
+            ],
+            "A": [
+                "Skarner",
+                "Udyr",
+                "Malphite"
+            ],
+            "B": [
+                "Olaf",
+                "Gragas",
+                "Graves"
+            ],
+            "C": [
+                "Rammus",
+                "ChoGath",
+                "KhaZix",
+                "Kayn"
+            ]
+        },
+        {
+            "name": "Johann",
+            "role": "middle",
+            "S": [
+                "Azir"
+            ],
+            "A": [
+                "Viego",
+                "Corki",
+                "Viktor"
+            ],
+            "B": [
+                "Yone",
+                "Yasuo",
+                "Galio",
+                "Ekko",
+                "Rumble"
+            ],
+            "C": [
+                "Kayle",
+                "Ryze",
+                "Cassiopeia"
+            ]
+        },
+        {
+            "name": "Leigh",
+            "role": "bottom",
+            "S": [
+                "KaiSa",
+                "Jhin"
+            ],
+            "A": [
+                "Samira",
+                "Caitlyn",
+                "Ezreal"
+            ],
+            "B": [
+                "Tristana",
+                "Xayah",
+                "Vayne",
+                "Jinx"
+            ],
+            "C": [
+                "Senna",
+                "Ashe"
+            ]
+        },
+        {
+            "name": "Adam",
+            "role": "support",
+            "S": [
+                "Seraphine"
+            ],
+            "A": [
+                "Yuumi",
+                "Rakan",
+                "Sona"
+            ],
+            "B": [
+                "Lulu",
+                "Karma",
+                "Soraka"
+            ],
+            "C": [
+                "Rell"
+            ]
+        }
+    ]
+}

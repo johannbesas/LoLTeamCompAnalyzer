@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LoL Team Comp Analyzer</title>
+    <link rel="stylesheet" href="/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="header">
+        <h2>LoL Team Comp<h2>
+                <a class="haed-nav__link" href="/">Home</a> |
+    </div>
+    <div id="players">
+        {{#if players}}
+        {{> players}}
+        {{/if}}
+    </div>
+</body>
+</html>
