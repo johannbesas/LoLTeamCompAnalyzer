@@ -20,13 +20,19 @@
   "homepage": "https://github.com/johannbesas/LoLTeamCompAnalyzer#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^4.0.4"
+    "express-handlebars": "^4.0.4",
+    "knex": "^0.95.4",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
-    "eslint": "7.9.0",
-    "eslint-config-eda": "0.1.4",
-    "jest": "^26.0.1",
-    "nodemon": "^2.0.4",
-    "supertest": "^4.0.2"
+    "@tailwindcss/forms": "^0.3.2",
+    "autoprefixer": "^10.2.5",
+    "eslint": "^7.23.0",
+    "eslint-config-eda": "^0.1.4",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.7",
+    "postcss": "^8.2.9",
+    "tailwindcss": "^2.0.4",
+    "tailwindcss-cli": "^0.1.2"
   }
 }
